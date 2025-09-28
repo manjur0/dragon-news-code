@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router";
 import Header from "../Components/Header";
 import GetMethod from "../api/GetMethod";
+import PostPut from "../api/PostPut";
 
 const HomeLayout = () => {
   return (
@@ -13,7 +14,8 @@ const HomeLayout = () => {
           <Outlet />
         </section>
         <section className="right-nav">
-          <GetMethod />
+          <PostPut />
+          {/* <GetMethod /> */}
         </section>
       </main>
       <footer>Footer</footer>

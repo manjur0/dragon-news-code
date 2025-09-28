@@ -11,7 +11,8 @@ const GetMethod = () => {
   const getMethod = async () => {
     try {
       const response = await axios.get(url);
-      setGetData(response.data);
+        setGetData(response.data);
+        console.log(response.data)
     } catch (error) {
       setError(true);
     } finally {
@@ -20,7 +21,7 @@ const GetMethod = () => {
   };
 
   useEffect(() => {
-    getMethod();
+      getMethod();
   }, []);
 
   return (
